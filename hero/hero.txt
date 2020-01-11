@@ -1,0 +1,80 @@
+actually copy them, there is good money in it.
+https://synthesiagame.com/
+
+https://www.youtube.com/watch?v=I0kVNMHo6fQ
+
+https://bitmidi.com/
+http://johnwilliams.free.fr/midi.php?critere=titre&lang=us
+https://www.pianobook.co.uk/library/triplefelt
+
+If im going to spend this time creating a game, it should be one I enjoy playing.
+
+Logic:
+
+One very smart and person created a function to decode MIDI files, and he made it available on Github. It uses a lot of binary a
+
+
+Use triggerReleasenote if collission is not at right time as key. 
+
+Make 7 note control? 4 Arrow keys + 123.
+
+(Wont work well because of only 14 notes) The first thing I did is build a piano. Have a piano that is always playing the notes. A real piano that can be played by it self. Then add the midis notes as guides. Calculate score if the correct keys are pushed at the right time.
+__________
+OR
+__________
+The first thing I did is build the demo version. Barebones code that will decode a midi file and then play back an individual track from that midi file. I decided that the easiest way to deal with timing will be to  reconstruct the midi file in a loop with the timing set to the next delta, and create a class object for each note at each delta. Each class object will move down at the tempo rate and play a sound exactly at the tempo time, but only if it is in the correct range of y coordinates while the correct key is pressed. Use triggerRelease note if collission is not at right time as key. 
+
+Create notes based on time delta. The note objects are created one by one starting from the top of the canvas, and a new note is created for each delta tick in real time. The note objects have it built in them to all go downwards at the same tempo speed.
+
+To play the note we do not need to use timing (that is already done in above step), we can instead use collission. If the note is collided with the piano && the correct key is pressed, we make the note sound.
+
+Maybe only require note to be pressed once and not held down, and midi note will play. OR. Have midi note always play, and only unmute when player pushes button. In the background the music is always playing. 
+
+
+Too lazy to buy a piano, so I did this.
+
+use pitchdetect https://github.com/cwilso/PitchDetect/blob/master/js/pitchdetect.js
+
+take audio from youtube and convert to notes.
+
+piano plays those notes with midi or something.
+
+add demo mode.
+
+to get accurate chords we can play back the piano notes at hyper pitch and compare them to midi chords. use acoustic fingerprint to make sure played back audio matches sample audio.
+
+IF TOO HARD:
+
+Make virtual piano. Take some available sheet music and audio and combine. dont auto generate notes.
+get notes from tab or sheet music website.
+https://music.stackexchange.com/questions/39412/where-can-i-find-machine-readable-music-scores
+
+https://github.com/cwilso/Standard-MIDI-File-reader
+
+https://onlinesequencer.net/import2/96d299594cdbb9ae1799965bd0e8568c?title=beatles-imagine.mid
+
+Using dark magic, we convert the midi into text readable format.
+http://flashmusicgames.com/midi/mid2txt.php
+https://www.inspiredacoustics.com/en/MIDI_note_numbers_and_center_frequencies
+https://www.midi.org/specifications-old/item/table-2-expanded-messages-list-status-bytes
+
+to get good sound:
+https://tonejs.github.io/
+
+example:
+https://www.youtube.com/watch?v=tUwop4ciEv4
+https://www.youtube.com/watch?v=TeAhufjbsag
+https://www.youtube.com/watch?v=KtZzTyl5YME
+https://www.youtube.com/watch?v=4943QS1D_c0
+https://www.youtube.com/watch?v=aq-VIrU0zUw&list=RD4943QS1D_c0&index=6
+pirates of carribean
+star wars
+beatles hey jude
+harry potter
+
+Floss daily.
+Assemble my own IKEA furniture.
+Wont send you unsolicited dick pics.
+Honestly, I'm quite the catch.
+
+Mayonaise is the dumpster trash of condiments

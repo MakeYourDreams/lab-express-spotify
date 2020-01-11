@@ -1,0 +1,14 @@
+function sumTwoSmallestNumbers(numbers) {  
+  //Code here
+  
+  lowestNumber = Math.min.apply( Math, numbers )
+  
+  
+  
+   for (var i = 0; i < numbers.length; i++) {
+     currentNumber = numbers[i];
+     test = Math.min.apply( Math, numbers )
+     console.log(test);
+
+   }
+}
